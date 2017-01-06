@@ -7,5 +7,4 @@ var config = {
 };
 firebase.initializeApp(config);
 
-var credential = firebase.auth.GoogleAuthProvider.credential(null, token);
-firebase.auth().signInWithCredential(credential);
+
