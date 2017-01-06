@@ -2,11 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import AppContainer from './react/containers/AppContainer';
 
-ReactDOM.render(
-  <AppContainer />,
-  document.getElementById('app')
-);
-
 var config = {
   apiKey: "AIzaSyBB_aazFI4lfQHjbV5aT8Sijn7g_QFWVus",
   authDomain: "tabby-birthday.firebaseapp.com",
@@ -16,7 +11,8 @@ var config = {
 };
 firebase.initializeApp(config);
 
-chrome.browserAction.setIcon("./favicon.ico");
-
-
+ReactDOM.render(
+  <AppContainer />,
+  document.getElementById('app')
+);
 
