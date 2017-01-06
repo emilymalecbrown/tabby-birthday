@@ -25,15 +25,23 @@ class Signup extends Component {
 
 	render() {
 		return (
-			<form onSubmit={this.handleSignup}>
-				<label htmlFor="name">Name</label>
-				<input name="name" type="text" />
-				<label htmlFor="name">Email</label>
-				<input name="email" type="email" />
-				<label htmlFor="name">Password</label>
-				<input name="password" type="password" />
-				<button type="submit">Submit!</button>
-			</form>
+			<div className="col-md-4 col-md-offset-4">
+				<form onSubmit={this.handleSignup}>
+					<div className="form-group">
+					  <label htmlFor="name">Name:</label>
+					  <input type="name" className="form-control" name="name" />
+					</div>
+				  <div className="form-group">
+				    <label htmlFor="email">Email:</label>
+				    <input type="email" className="form-control" name="email" />
+				  </div>
+				  <div className="form-group">
+				    <label htmlFor="pwd">Password:</label>
+				    <input type="password" className="form-control" name="password" />
+				  </div>
+				  <button type="submit" className="btn btn-primary">Submit</button>
+				</form>
+			</div>
 		)
 	}
 

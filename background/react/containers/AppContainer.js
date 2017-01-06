@@ -30,12 +30,8 @@ export default class AppContainer extends Component {
       <div>
       	{ this.state.user ?
       		<h2> There is a user signed in!</h2> :
-      		<div>
-	      		<h2> There is no user signed in </h2>
-	      		<Signup user={this.state.user} setUserOnState={this.setUserOnState} />
-      		</div>
+      		<Signup user={this.state.user} setUserOnState={this.setUserOnState} />
       	}
-        <img src="http://lorempixel.com/400/200" />
       </div>
     )
   }
