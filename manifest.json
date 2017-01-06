@@ -11,7 +11,7 @@
     "tabs", "notifications", "storage"
   ],
    "background": {
-    "scripts": ["./background/background.js"]
+    "scripts": ["./background/public/bundle.js"]
   },
   "content_security_policy": "script-src 'self' https://www.gstatic.com/firebasejs/3.6.4/firebase.js https://*.firebaseio.com; object-src 'self'"
 }
