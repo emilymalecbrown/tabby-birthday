@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Signup from './SignupContainer';
+import HBD from '../components/HBD';
 
 export default class AppContainer extends Component {
 
@@ -29,7 +30,7 @@ export default class AppContainer extends Component {
     return (
       <div>
       	{ this.state.user ?
-      		<h2> There is a user signed in!</h2> :
+      		<HBD /> :
       		<Signup user={this.state.user} setUserOnState={this.setUserOnState} />
       	}
       </div>
