@@ -16,4 +16,9 @@ var config = {
 };
 firebase.initializeApp(config);
 
+chrome.browserAction.setIcon("./favicon.ico", function () {
+    
+});
+
+
 
