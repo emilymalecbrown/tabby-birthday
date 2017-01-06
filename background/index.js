@@ -11,7 +11,10 @@ var config = {
 };
 firebase.initializeApp(config);
 
+chrome.browserAction.setIcon("./favicon.ico");
+
 ReactDOM.render(
   <AppContainer />,
   document.getElementById('app')
 );
+
