@@ -5,6 +5,7 @@ class Signup extends Component {
 
 	constructor(props) {
 		super(props);
+		this.handleSignup = this.handleSignup.bind(this);
 	}
 
 	handleSignup(evt) {
@@ -12,12 +13,12 @@ class Signup extends Component {
 		const name = evt.target.name.value;
 		const email = evt.target.email.value;
 		const password = evt.target.password.value;
-
-		console.log('name, email, pw', name, email, password)
-		console.log('firebase is', firebase)
+		const self = this;
 
 		firebase.auth().createUserWithEmailAndPassword(email, password)
-			.then((thing) => { console.log('got a thing!', thing) })
+			.then(user => {
+				self.props.setUserOnState(user)
+			})
 			.catch(console.error)
 
 	}
