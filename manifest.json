@@ -1,0 +1,16 @@
+{
+  "name": "tabby-birthday",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Tabby birthday",
+  "chrome_url_overrides": {
+    "newtab": "./background/index.html"
+  },
+  "minimum_chrome_version": "18",
+  "permissions": [
+    "tabs", "notifications", "storage"
+  ],
+   "background": {
+    "scripts": ["./background/background.js"]
+  }
+}
