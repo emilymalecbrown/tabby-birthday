@@ -11,7 +11,7 @@ export default class HBD extends Component {
         hh = h / 2,
         
         opts = {
-          strings: [ 'HAPPY', 'BIRTHDAY!' ],
+          strings: [ 'HAPPY', 'BIRTHDAY!', 'ALLY' ],
           charSize: 30,
           charSpacing: 35,
           lineHeight: 40,
@@ -409,7 +409,10 @@ export default class HBD extends Component {
 
   render () {
     return (
-      <canvas id="c"></canvas>
+      <div>
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/4sZmPHJPvZE?autoplay=1" ></iframe>
+        <canvas id="c"></canvas>
+      </div>
     )
   }
 }
